@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "1047982353643",
+    "firebase_url": "https://orbital-nirvana-349213-default-rtdb.firebaseio.com",
+    "project_id": "orbital-nirvana-349213",
+    "storage_bucket": "orbital-nirvana-349213.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1047982353643:android:99d1e1f6751df0dc05e2ae",
+        "android_client_info": {
+          "package_name": "com.eldercare.app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1047982353643-7dpdb8hi8r2tfukbrlg4h9rbapq9ilmg.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBwd25FQp0O2o8DFK5N806EPqYi4GkW-Z8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1047982353643-7dpdb8hi8r2tfukbrlg4h9rbapq9ilmg.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
