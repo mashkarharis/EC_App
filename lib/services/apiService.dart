@@ -103,4 +103,16 @@ class APIService {
 
     return await http.get(Uri.parse(url));
   }
+
+  static Future<http.Response> predict(Map toSubmitdata) async {
+    String url = URLS.restServer + '/mobile/private/predictStroke';
+
+    Map data = toSubmitdata;
+    //encode Map to JSON
+    var body = json.encode(data);
+    print(body);
+    print(url);
+    return await http.post(Uri.parse(url),
+        headers: {"Content-Type": "application/json"}, body: body);
+  }
 }

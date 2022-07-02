@@ -4,6 +4,7 @@ import 'dart:math';
 import 'package:app/screens/addelder.dart';
 import 'package:app/screens/mapScreen.dart';
 import 'package:app/screens/myaccount.dart';
+import 'package:app/screens/strokepredict.dart';
 import 'package:app/screens/welcomescreen.dart';
 import 'package:app/services/apiService.dart';
 import 'package:app/services/pushNotificationService.dart';
@@ -157,6 +158,20 @@ class _ElderListScreenState extends State<ElderListScreen> {
                                   MaterialPageRoute(
                                       builder: (context) =>
                                           AddElder(refresh, null)));
+                            },
+                          ),
+                          IconButton(
+                            icon: const Icon(
+                              Icons.monitor_heart,
+                              size: 40,
+                            ),
+                            tooltip: 'Stroke Predictor',
+                            color: Color.fromARGB(255, 198, 19, 70),
+                            onPressed: () {
+                              Navigator.push(
+                                  context,
+                                  MaterialPageRoute(
+                                      builder: (context) => StrokePredict()));
                             },
                           ),
                           IconButton(
