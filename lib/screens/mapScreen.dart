@@ -20,9 +20,9 @@ class _MapScreenState extends State<MapScreen> {
   void initState() {
     // TODO: implement initState
     super.initState();
-    name = "";
-    nic = "";
-    mac = "";
+    name = " [ Please Select Elder ] ";
+    nic = " [ Please Select Elder ] ";
+    mac = " [ Please Select Elder ] ";
   }
 
   @override
@@ -100,12 +100,24 @@ class _MapScreenState extends State<MapScreen> {
             color: Color.fromARGB(255, 3, 45, 80),
             child:
                 Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
-              Text("Name : " + name,
-                  style: TextStyle(fontSize: 16, color: Colors.white)),
-              Text("NIC : " + nic,
-                  style: TextStyle(fontSize: 16, color: Colors.white)),
-              Text("MAC : " + mac,
-                  style: TextStyle(fontSize: 16, color: Colors.white)),
+              DefaultTextStyle(
+                style: TextStyle(fontSize: 16, color: Colors.white),
+                child: Text(
+                  "Name : " + name,
+                ),
+              ),
+              DefaultTextStyle(
+                style: TextStyle(fontSize: 16, color: Colors.white),
+                child: Text(
+                  "NIC : " + nic,
+                ),
+              ),
+              DefaultTextStyle(
+                style: TextStyle(fontSize: 16, color: Colors.white),
+                child: Text(
+                  "MAC : " + mac,
+                ),
+              ),
             ]),
           ),
         ],
